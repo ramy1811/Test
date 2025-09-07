@@ -1,0 +1,11 @@
+trigger:
+- main   # change to 'master' if your default branch is master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: |
+    echo "Pinging 8.8.8.8..."
+    ping -c 4 8.8.8.8
+  displayName: 'Ping'
