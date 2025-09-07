@@ -9,5 +9,5 @@ pool:
 steps:
 - script: |
     echo "Pinging google.com..."
-    ping google.com
+    ping 172.20.100.254
   displayName: 'Run Ping Command on Windows'
