@@ -1,9 +1,11 @@
 trigger:
 - main
 
-pool:
-  vmImage: 'windows-latest'
 
+pool:
+    name: 'test'                 # your self-hosted pool name
+    demands:
+      - agent.name -equals ML-RMOHAMMED
 steps:
 - script: |
     echo "Pinging google.com..."
